@@ -1,0 +1,16 @@
+{% extends 'base.html' %} {% block title %} Add income categorty{% endblock %}
+{% block body %}
+<div class="container " style="max-width: 500px;">
+    <div class="card bg-dark p-4 mt-4 text-light "   >
+      <h2>Add Income Category</h2>
+        <form action="" method="POST" >
+            {% csrf_token %} 
+            {{form}}
+            <div class="dropdown-divider"></div>
+            <button class="btn-success btn">Add</button>
+        </form>  
+   
+      </div>
+</div>
+{% endblock %}
+
